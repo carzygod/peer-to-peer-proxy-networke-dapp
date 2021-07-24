@@ -14,7 +14,11 @@ class LoginModel extends BaseModel {
   Future<bool> login(String account, String passWord) async {
     bool result = false;
 
-    var parameters = {'email': account, 'password': passWord};
+    var parameters = {
+      'type': 'PASSWORD',
+      'email': account,
+      'password': passWord
+    };
     LoginEntity loginEntity = await _userService.login(parameters);
     _userModel.setToken(loginEntity);
 
