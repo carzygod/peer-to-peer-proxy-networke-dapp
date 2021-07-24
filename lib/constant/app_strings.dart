@@ -1,6 +1,6 @@
 class AppStrings {
-  static const String APP_NAME = '瞰视云加速';
-  static const String TOKEN = 'X-ACCESS-TOKEN';
+  static const String APP_NAME = 'Peer To Peer Proxy Networke';
+  static const String TOKEN = 'Authorization';
   static const String USER_INFO = 'USER_INFO';
   static const String USER_SUBSCRIBE = 'USER_SUBSCRIBE';
   static const String SERVER_NODE = 'SERVER_NODE';
@@ -8,5 +8,5 @@ class AppStrings {
   static const String SELECT_SERVER_NODE = 'SELECT_SERVER_NODE';
   static const String ERR_NO = 'ERR_NO';
   static const String IS_FIRST = "IS_FIRST";
-  static const String OPEN_DOOR = '开启加速服务';
+  static const String OPEN_DOOR = 'Run';
 }
