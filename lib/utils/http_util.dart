@@ -34,7 +34,7 @@ class HttpUtil {
       await SharedPreferencesUtil.getInstance()
           .getString(AppStrings.TOKEN)
           .then((token) {
-        options.headers[AppStrings.TOKEN] = token;
+        options.headers["Authorization"] = "Bearer " + token;
         print("token=$token");
       });
       dio.unlock();
@@ -63,7 +63,7 @@ class HttpUtil {
     Response response;
     if (parameters != null && options != null) {
       response =
-      await dio.get(url, queryParameters: parameters, options: options);
+          await dio.get(url, queryParameters: parameters, options: options);
     } else if (parameters != null && options == null) {
       response = await dio.get(url, queryParameters: parameters);
     } else if (parameters == null && options != null) {
