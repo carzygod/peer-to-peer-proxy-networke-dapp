@@ -7,7 +7,8 @@ class ServerService {
     try {
       var result = await HttpUtil.instance.get(AppUrls.SERVER);
 
-      List<ServerEntity> _serverEntityList = serverEntityFromList(result['data']);
+      List<ServerEntity> _serverEntityList =
+          serverEntityFromList(result['data']);
 
       return _serverEntityList;
     } catch (err) {

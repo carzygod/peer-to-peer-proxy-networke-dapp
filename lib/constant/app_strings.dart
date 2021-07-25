@@ -1,5 +1,5 @@
 class AppStrings {
-  static const String APP_NAME = 'Peer To Peer Proxy Networke';
+  static const String APP_NAME = 'P2P Proxy Networke';
   static const String TOKEN = 'Authorization';
   static const String USER_INFO = 'USER_INFO';
   static const String USER_SUBSCRIBE = 'USER_SUBSCRIBE';
